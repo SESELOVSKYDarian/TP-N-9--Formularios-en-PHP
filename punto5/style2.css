@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Anton&family=Freeman&family=Krona+One&family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Anton&family=Freeman&family=Just+Another+Hand&family=Krona+One&family=Sixtyfour&display=swap");
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+body {
+  background-color: rgba(189, 189, 189, 0.479);
+}
+.texto {
+  padding: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.678)),
+    url("banner.jpg");
+}
+.texto h1 {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 700%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070027;
+  padding: 0 20px;
+  height: auto;
+}
+
+.logo {
+  margin: 10px 10px 10px 2%;
+  font-family: "Anton", sans-serif;
+  font-size: 250%;
+  font-weight: 500;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.nav-links li:hover {
+  transform: scale(1.1);
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 140%;
+}
+
+.nav-links a:hover {
+  color: rgb(0, 238, 255);
+}
+
+.crono h2 {
+  margin: 1% 1% 0 3%;
+  font-size: 300%;
+  font-family: "Alatsi", sans-serif;
+}
+
+.bold {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #000a29d7;
+  color: white;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+}
+.tabla {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  gap: 5px;
+  grid-template-columns: 1fr repeat(5, 2fr);
+  grid-template-areas:
+    "a1 b1 c1 d1 e1 f1"
+    "a2 b2 c2 d2 e2 f2"
+    "a3 b2 c2 d2 e2 f2"
+    "a4 b2 c2 d4 e2 f2"
+    "a5 b2 c5 d4 e2 f5"
+    "a6 x6 x6 x6 x6 x6"
+    "a7 b7 c7 de7 de7 f7"
+    "a8 b7 c7 de8 de8 f7";
+  gap: 5px 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.822);
+}
+.item a {
+  font-family: "Freeman", sans-serif;
+  margin: 15px;
+  font-size: 110%;
+  color: #badeff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.item a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.taller {
+  background-color: #001120c9;
+}
+.charla {
+  background-color: #0054a3c9;
+}
+.expo {
+  background-color: #002a52cc;
+}
+.receso {
+  color: white;
+  background-color: #00238bb6;
+  transition: all 0.5s ease;
+}
+.receso:hover {
+  transform: scale(1.04);
+}
+.hora {
+  color: rgba(250, 250, 250, 0.822);
+  font-family: "Freeman", sans-serif;
+  font-weight: 700;
+  background-color: #000a29ad;
+  font-size: 110%;
+}
+.a1 {
+  grid-area: a1;
+}
+.a2 {
+  grid-area: a2;
+}
+.a3 {
+  grid-area: a3;
+}
+.a4 {
+  grid-area: a4;
+}
+.a5 {
+  grid-area: a5;
+}
+.a6 {
+  grid-area: a6;
+}
+.a7 {
+  grid-area: a7;
+}
+.a8 {
+  grid-area: a8;
+}
+.b1 {
+  grid-area: b1;
+}
+.b2 {
+  grid-area: b2;
+}
+.b7 {
+  grid-area: b7;
+}
+.c1 {
+  grid-area: c1;
+}
+.c2 {
+  grid-area: c2;
+}
+.c5 {
+  grid-area: c5;
+}
+.c7 {
+  grid-area: c7;
+}
+.d1 {
+  grid-area: d1;
+}
+.d2 {
+  grid-area: d2;
+}
+.d4 {
+  grid-area: d4;
+}
+.de7 {
+  grid-area: de7;
+}
+.de8 {
+  grid-area: de8;
+}
+.e1 {
+  grid-area: e1;
+}
+.e2 {
+  grid-area: e2;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f5 {
+  grid-area: f5;
+}
+.f7 {
+  grid-area: f7;
+}
+.x6 {
+  grid-area: x6;
+}
